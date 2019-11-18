@@ -1,1 +1,2 @@
 # Leetcode
+学习！
