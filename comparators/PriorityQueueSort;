@@ -1,0 +1,25 @@
+import java.util.*;
+public class sol {
+	public static void main(String[] args) {
+
+		Map<Integer,Integer> map = new HashMap<>();
+		map.put(1,10);
+		map.put(2,3);
+		map.put(3,10);
+		Queue<Integer> q = new PriorityQueue<>(3,(a,b)->{
+			if (map.get(a) == map.get(b)) {
+				return a - b;
+			}
+			return map.get(b) - map.get(a);
+		});
+		q.offer(1);
+		q.offer(1);
+		q.offer(2);
+		q.offer(3);
+		while (!q.isEmpty()) {
+			System.out.println(q.poll());
+		}
+
+	}
+}
+		
