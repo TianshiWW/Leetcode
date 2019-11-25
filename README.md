@@ -1,2 +1,2 @@
 # Leetcode
-学习！
+Study & Dingyi
